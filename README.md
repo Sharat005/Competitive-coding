@@ -1,2 +1,2 @@
 # Competitive-coding
-A collection of solved competitive coding problems from Hackerrank.
+A collection of solved competitive coding problems from Hackerrank in Python.
