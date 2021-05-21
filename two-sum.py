@@ -1,5 +1,7 @@
 # https://leetcode.com/problems/two-sum/
 
+# First solved it using brute force method then used hash map to make use of its constant time lookup
+
 class Solution:
     def twoSum(self, nums: List[int], target: int) -> List[int]:
         #sortedNums = sorted(nums)
