@@ -2,6 +2,25 @@
 
 # This is very simple using python
 
+# My own method in leetcode
+
+class Solution:
+    def sortedSquares(self, nums: List[int]) -> List[int]:
+        n = len(nums);
+        startPtr = 0;
+        endPtr = n-1;
+        squares = [0] * n;
+        for i in range(len(nums)-1, -1, -1):
+            if(nums[startPtr]*nums[startPtr]>nums[endPtr]*nums[endPtr]):
+                squares[i] = nums[startPtr]*nums[startPtr]
+                startPtr+=1;
+            else:
+                squares[i] = nums[endPtr]*nums[endPtr]
+                endPtr-=1
+        return squares;
+        
+# educative method
+
 def make_squares(arr):
   n = len(arr)
   squares = [0 for x in range(n)]
