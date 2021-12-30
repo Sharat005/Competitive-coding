@@ -20,3 +20,25 @@ class Solution:
             p = p.next
         p.next = l1 if l1 else l2
         return res.next
+    
+#Attempt2
+
+class Solution:
+    def mergeTwoLists(self, list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
+        first = list1
+        second = list2
+        output = ListNode()
+        final = output
+        while(first and second):
+            if(first.val < second.val):
+                final.next = first
+                first = first.next
+            else:
+                final.next = second
+                second = second.next
+            final = final.next
+        if first is None:
+            final.next=second
+        else:
+            final.next=first
+        return output.next
