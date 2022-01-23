@@ -1,6 +1,6 @@
 # two pointer approach
 
-# https://leetcode.com/problems/backspace-string-compare/
+# https://leetcode.com/problems/backspace-string-compare/edd
 
 class Solution:
     def backspaceCompare(self, s: str, t: str) -> bool:
