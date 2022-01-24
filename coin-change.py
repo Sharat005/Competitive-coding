@@ -19,7 +19,7 @@ class Solution:
         
         # Final approach which passed all the test cases
         
-        # to understand draw a matrix with rows as coins available and columns as value incrementing 1 each time
+        # To understand draw a matrix with rows as coins available and columns as value incrementing 1 each time
 
         dp = [float('inf')] * (amount + 1)
         dp[0] = 0
