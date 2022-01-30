@@ -11,8 +11,10 @@ class Solution:
             if (sum-k) in dict:
                 count += dict[sum-k]
             
-            if(sum in dict):
-                dict[sum] = dict[sum] + 1
-            else:
-                dict[sum] = 0 + 1
+            dict[sum] = dict[sum] + 1 if sum in dict else 0 + 1
+            
+            # if(sum in dict):
+            #     dict[sum] = dict[sum] + 1
+            # else:
+            #     dict[sum] = 0 + 1
         return count
