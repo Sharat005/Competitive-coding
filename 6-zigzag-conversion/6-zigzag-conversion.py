@@ -1,8 +1,8 @@
 class Solution:
     def convert(self, s: str, numRows: int) -> str:
         
-        if(len(s) > 1000 or numRows > 1000):
-            return None
+        # if(len(s) > 1000 or numRows > 1000):
+        #     return None
         output = [""]* (min(numRows, len(s)))
                 
         down = False
