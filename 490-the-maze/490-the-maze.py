@@ -1,18 +1,5 @@
 class Solution:
     def hasPath(self, maze: List[List[int]], start: List[int], destination: List[int]) -> bool:
-        left, right, up, down = [0,-1], [0,1], [-1,0], [1,0]
-        
-        
-#         # start for a matrix/lawn moving
-#         start = [a,b] --> [a-1,b-1],[a,b-1],[a-1,b],[a+1,b+1],[a+1,b],[a,b+1]
-        
-#         #to move left
-#         start[0], start[1] = start[0] + left[0], start[1] + left[1]
-        
-#         modR, modC = start[0] + left[0], start[1] + left[1]
-        
-        
-        
         m, n, seen = len(maze), len(maze[0]), set()
         def dfs(i, j):
             if [i, j] == destination: return True
