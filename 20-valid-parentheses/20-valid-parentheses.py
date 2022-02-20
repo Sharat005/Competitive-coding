@@ -9,13 +9,11 @@ class Solution:
             ')': '(',
             ']': '[',
             '}': '{'
-        }
-        closes = [')','}',']']
-        
+        }        
         
         for strr in s:
             stack.append(strr)
-            if strr in closes:
+            if strr in dict:
                 temp = ''
                 if(len(stack) < 2):
                     return False
@@ -23,7 +21,6 @@ class Solution:
                     temp = stack.pop()
                 if(len(stack) > 0 and dict[temp] != stack.pop()):
                     return False
-        print(stack)
         if len(stack) is 0:
             return True
                 
