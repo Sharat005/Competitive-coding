@@ -1,7 +1,14 @@
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        output = collections.defaultdict(list)
+        
+        anagramMap = {}
+        
         for s in strs:
-            output[tuple(sorted(s))].append(s)
-        return output.values()
+            ss = str(sorted(s))
+            if ss not in anagramMap:
+                anagramMap[ss] = []
+            anagramMap[ss].append(s)
+            
+        return anagramMap.values()
+            
         
