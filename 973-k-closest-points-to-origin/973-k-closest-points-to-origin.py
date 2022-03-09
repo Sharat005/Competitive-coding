@@ -5,7 +5,6 @@ class Solution:
             return sqrt(point[0]**2 + point[1]**2)
         
         
-        
         minHeap = []
         
         for i in range(len(points)):
@@ -16,5 +15,4 @@ class Solution:
         for i in range(k):
             output.append(heapq.heappop(minHeap)[1])
             
-        print(output)
         return output
