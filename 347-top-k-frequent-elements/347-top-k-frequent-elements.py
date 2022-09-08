@@ -44,7 +44,7 @@ class Solution:
 #             else:
 #                 dictt[nums[i]] = 1
                 
-#         dictt = dict(sorted(dictt.items(), key=lambda item: item[1], reverse=True))     
+#         dictt = dict(sorted(dictt.items(), key=lambda item: item[1], reverse=True))    
         
 #         for key,val in dictt.items():
 #             if counter < k:
